@@ -2,7 +2,13 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var nome = "Vitor pontual";
+            
+            var letras_minusculas = nome.toLocaleLowerCase()
+            var primeira = letras_minusculas.charAt(0).toUpperCase();
+            var primeiro_nome = primeira + letras_minusculas.substr(1, letras_minusculas.length)
 
+            console.log("Olá, " + primeiro_nome.split(" ")[0] + ", tudo bem com você?")
         </script>
     </head>
     <body>
