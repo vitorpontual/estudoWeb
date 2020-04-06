@@ -2,7 +2,13 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var product = {name:"Pencil", price:1.99, color:"Red"}
+            function retrunInfo() {
+                return this.name + " " + this.price + " " + this.color;
+            }
+            product.info = retrunInfo;
+            alert(product.info())
+            
         </script>
     </head>
     <body>

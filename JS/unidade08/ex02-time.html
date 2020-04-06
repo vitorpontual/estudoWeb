@@ -2,7 +2,24 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            function retornoDoisDigitos(time){
+                if (time < 10) {
+                    return "0" + time;
+                } else {
+                    return time;
+                }
+            }
+                
+
+            var now = new Date();
+            console.log(retornoDoisDigitos(now.getHours()) + ":" + retornoDoisDigitos(now.getMinutes()) + ":" + retornoDoisDigitos(now.getSeconds()));
+
+            var birthday = new Date(1991, 6, 8, 6, 2, 1)
+
+            console.log(birthday);
+
+
+
         </script>
     </head>
     <body>

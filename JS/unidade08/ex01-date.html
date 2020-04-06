@@ -2,8 +2,14 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-
+            var month = ["janeiro", "fevereiro", "março", "abril"];
+            var year = new Date();
             
+            console.log(year.getDate()+ " de " + month[year.getMonth()] + " de " + year.getFullYear());
+            
+
+            var birthday = new Date (1991, 6, 8);
+            console.log(birthday.getDate())
         </script>
     </head>
     <body>
