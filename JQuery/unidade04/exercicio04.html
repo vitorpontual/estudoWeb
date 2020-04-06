@@ -7,7 +7,9 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+                $("li.jumento").remove();
+                $("li:last").replaceWith("<li>Curso de Putaria</li>");
+                $("ul").wrapAll("<div style='border: 1px solid #ccc'></div>");
 			})
 		</script>        
     </head>
@@ -17,8 +19,8 @@
       
 		<ul>
         		
-            <li>Curso HTML5 Essencial</li>
-            <li>Curso CSS3 Essencial</li>
+            <li class="jumento">Curso HTML5 Essencial</li>
+            <li class=>Curso CSS3 Essencial</li>
             <li>Curso Javascript Essencial</li>
             <li>Curso jQuery Fundamental</li>
         </ul>

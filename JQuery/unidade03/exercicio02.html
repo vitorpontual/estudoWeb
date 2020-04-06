@@ -11,14 +11,21 @@
             <a href="#">Argentina</a>
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
+            <a href="#">Paraguai</a>
         </nav>
+
+        <a href="#">Japão</a>
+
         
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
         <script>    
-        	$( function() {
+            $ (function() {
+                $("nav a:contains('Chile')").css("color", "red").css("text-decoration", "none");
+                
+            })
 				
-			})
+			
         </script>   
                 
     </body>

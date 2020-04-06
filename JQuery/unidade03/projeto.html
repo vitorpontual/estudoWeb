@@ -14,7 +14,8 @@
 		<script src="jquery-3.2.1.min.js"></script>
         <script>
 			$( function(e) {
-	
+                $("a[href$='.pdf']").before("<img src='imagens/icon_pdf.gif'>");
+                $("a[href$='.zip']").before("<img src='imagens/icon_zip.gif'>");
             });
 		</script>
     </head>
