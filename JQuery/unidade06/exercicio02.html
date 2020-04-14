@@ -9,14 +9,32 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			
+			$(function(e) {
+                    $('janela').hide();
+
+                    $('#mostrar').hover(mostrarElemento, esconderElemento) ;
+
+                 //   $('#mostrar').click(mostrarElemento) ;
+
+                 //   $('#esconder').click(esconderElemento) ;
+                })
+
+                
+            function mostrarElemento(e) {
+                $('#janela').show();
+            }
+            function esconderElemento(e) {
+                $('#janela').hide()
+            }
+            
+
 		</script>        
     </head>
 
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
-        <input type="button" id="esconder" 	value="Esconder" />
-        
+       <!-- <input type="button" id="esconder" 	value="Esconder" />
+       -->
         <div id="janela"></div>
     </body>
 
